@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from wikibaseintegrator.wbi_exceptions import ModificationFailed, SaveFailed, SearchError
+from dhwb.wbi_exceptions import ModificationFailed, SaveFailed, SearchError
 
 
 class TestWbiExceptions(TestCase):

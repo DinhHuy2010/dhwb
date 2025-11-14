@@ -4,9 +4,9 @@ import unittest
 import requests
 import ujson
 
-from wikibaseintegrator import wbi_login
-from wikibaseintegrator.wbi_backoff import wbi_backoff
-from wikibaseintegrator.wbi_config import config
+from dhwb import wbi_login
+from dhwb.wbi_backoff import wbi_backoff
+from dhwb.wbi_config import config
 
 
 class TestMethods(unittest.TestCase):

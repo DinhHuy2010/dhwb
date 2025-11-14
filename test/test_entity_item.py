@@ -5,10 +5,10 @@ from copy import deepcopy
 import pytest
 import requests
 
-from wikibaseintegrator import WikibaseIntegrator
-from wikibaseintegrator.datatypes import BaseDataType, Item, MonolingualText, String
-from wikibaseintegrator.wbi_config import config as wbi_config
-from wikibaseintegrator.wbi_exceptions import NonExistentEntityError
+from dhwb import WikibaseIntegrator
+from dhwb.datatypes import BaseDataType, Item, MonolingualText, String
+from dhwb.wbi_config import config as wbi_config
+from dhwb.wbi_exceptions import NonExistentEntityError
 
 wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_entity_item.py)'
 

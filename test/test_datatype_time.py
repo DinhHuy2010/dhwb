@@ -1,8 +1,8 @@
 import unittest
 
-from wikibaseintegrator import WikibaseIntegrator
-from wikibaseintegrator.datatypes import Time
-from wikibaseintegrator.wbi_config import config as wbi_config
+from dhwb import WikibaseIntegrator
+from dhwb.datatypes import Time
+from dhwb.wbi_config import config as wbi_config
 
 wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_entity_property.py)'
 

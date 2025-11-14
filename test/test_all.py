@@ -1,12 +1,12 @@
 import copy
 import unittest
 
-from wikibaseintegrator import WikibaseIntegrator, datatypes, wbi_fastrun
-from wikibaseintegrator.datatypes import BaseDataType, Item
-from wikibaseintegrator.entities import ItemEntity
-from wikibaseintegrator.wbi_config import config as wbi_config
-from wikibaseintegrator.wbi_enums import ActionIfExists, WikibaseDatatype
-from wikibaseintegrator.wbi_fastrun import get_fastrun_container
+from dhwb import WikibaseIntegrator, datatypes, wbi_fastrun
+from dhwb.datatypes import BaseDataType, Item
+from dhwb.entities import ItemEntity
+from dhwb.wbi_config import config as wbi_config
+from dhwb.wbi_enums import ActionIfExists, WikibaseDatatype
+from dhwb.wbi_fastrun import get_fastrun_container
 
 wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_all.py)'
 
@@ -164,7 +164,7 @@ def test_ref_equals():
 
 
 def test_equal_qualifiers():
-    from wikibaseintegrator.models import Qualifiers
+    from dhwb.models import Qualifiers
 
     claim1 = Item(prop_nr='P1')
     claim1.qualifiers.set([Item(prop_nr='P2', value='Q1'), Item(prop_nr='P2', value='Q2')])

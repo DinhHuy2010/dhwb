@@ -1,15 +1,15 @@
 import unittest
 from copy import deepcopy
 
-from wikibaseintegrator import WikibaseIntegrator
-from wikibaseintegrator.datatypes import (URL, CommonsMedia, ExternalID, Form, GeoShape, GlobeCoordinate, Item, Lexeme, Math, MonolingualText, MusicalNotation, Property, Quantity,
+from dhwb import WikibaseIntegrator
+from dhwb.datatypes import (URL, CommonsMedia, ExternalID, Form, GeoShape, GlobeCoordinate, Item, Lexeme, Math, MonolingualText, MusicalNotation, Property, Quantity,
                                           Sense, String, TabularData, Time)
-from wikibaseintegrator.datatypes.extra import EDTF, LocalMedia
-from wikibaseintegrator.entities import ItemEntity
-from wikibaseintegrator.models import Descriptions
-from wikibaseintegrator.wbi_config import config as wbi_config
-from wikibaseintegrator.wbi_enums import ActionIfExists, WikibaseRank, WikibaseSnakType, WikibaseTimePrecision
-from wikibaseintegrator.wbi_helpers import generate_entity_instances, search_entities
+from dhwb.datatypes.extra import EDTF, LocalMedia
+from dhwb.entities import ItemEntity
+from dhwb.models import Descriptions
+from dhwb.wbi_config import config as wbi_config
+from dhwb.wbi_enums import ActionIfExists, WikibaseRank, WikibaseSnakType, WikibaseTimePrecision
+from dhwb.wbi_helpers import generate_entity_instances, search_entities
 
 wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_wbi_core.py)'
 

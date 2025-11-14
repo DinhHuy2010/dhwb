@@ -1,8 +1,8 @@
 import unittest
 
-from wikibaseintegrator import WikibaseIntegrator, datatypes
-from wikibaseintegrator.models import Form
-from wikibaseintegrator.wbi_config import config as wbi_config
+from dhwb import WikibaseIntegrator, datatypes
+from dhwb.models import Form
+from dhwb.wbi_config import config as wbi_config
 
 wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_entity_lexeme.py)'
 

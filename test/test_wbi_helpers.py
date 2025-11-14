@@ -5,9 +5,9 @@ import unittest
 import pytest
 import requests
 
-from wikibaseintegrator.wbi_config import config as wbi_config
-from wikibaseintegrator.wbi_exceptions import MaxRetriesReachedException
-from wikibaseintegrator.wbi_helpers import execute_sparql_query, format2wbi, get_user_agent, mediawiki_api_call_helper
+from dhwb.wbi_config import config as wbi_config
+from dhwb.wbi_exceptions import MaxRetriesReachedException
+from dhwb.wbi_helpers import execute_sparql_query, format2wbi, get_user_agent, mediawiki_api_call_helper
 
 
 def test_connection():
@@ -79,7 +79,7 @@ WHERE
 
 def test_format2wbi():
     wbi_config['USER_AGENT'] = 'WikibaseIntegrator-pytest/1.0 (test_wbi_helpers.py)'
-    from wikibaseintegrator.entities import ItemEntity, LexemeEntity, MediaInfoEntity, PropertyEntity
+    from dhwb.entities import ItemEntity, LexemeEntity, MediaInfoEntity, PropertyEntity
 
     assert isinstance(format2wbi('item', '{}'), ItemEntity)
     assert isinstance(format2wbi('property', '{}'), PropertyEntity)

@@ -6,10 +6,10 @@ import pytest
 import requests
 from oauthlib.oauth2 import MissingTokenError
 
-from wikibaseintegrator import wbi_login
-from wikibaseintegrator.wbi_helpers import mediawiki_api_call_helper
+from dhwb import wbi_login
+from dhwb.wbi_helpers import mediawiki_api_call_helper
 # look for environment variables. if none set, don't do anything
-from wikibaseintegrator.wbi_login import LoginError
+from dhwb.wbi_login import LoginError
 
 WDUSER = os.getenv("WDUSER")
 WDPASS = os.getenv("WDPASS")
